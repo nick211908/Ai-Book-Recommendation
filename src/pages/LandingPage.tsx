@@ -33,45 +33,33 @@ const LandingPage: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="inline-flex items-center px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm">
-                <Brain className="h-4 w-4 mr-2" />
-                Trusted by 30,000+ Users Worldwide
-              </div>
+                <Brain className="h-4 w-4 mr-2" />                 ವಿಶ್ವಾದ್ಯಂತ 30,000+ ಬಳಕೆದಾರರಿಂದ ನಂಬಲಾಗಿದೆ               </div>
               
               <div className="space-y-4">
-                <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
-                  AI Course-Book
-                  <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent block">
-                    Made Simple
-                  </span>
+                <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight">                   ಎಐ ಕೋರ್ಸ್ ಪುಸ್ತಕ                   <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent block">                     ಸರಳವಾಗಿದೆ                   </span>
                 </h1>
-                <p className="text-xl text-slate-300 leading-relaxed max-w-lg">
-                  Generate comprehensive course books with AI assistance and 
-                  intelligent content creation. Get professional learning materials 
-                  instantly, without the complexity or cost.
-                </p>
+                <p className="text-xl text-slate-300 leading-relaxed max-w-lg">                   AI ಸಹಾಯದಿಂದ ಸಮಗ್ರ ಕೋರ್ಸ್ ಪುಸ್ತಕಗಳನ್ನು ರಚಿಸಿ ಮತ್ತು 
+                  ಬುದ್ಧಿವಂತ ವಿಷಯ ರಚನೆ. ವೃತ್ತಿಪರ ಕಲಿಕಾ ಸಾಮಗ್ರಿಗಳನ್ನು ಪಡೆಯಿರಿ 
+                  ತಕ್ಷಣ, ಸಂಕೀರ್ಣತೆ ಅಥವಾ ವೆಚ್ಚವಿಲ್ಲದೆ.                 </p>
               </div>
 
               <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/30">
-                <h3 className="text-lg font-semibold text-white mb-4">Generate Your Course Book</h3>
+                <h3 className="text-lg font-semibold text-white mb-4">ನಿಮ್ಮ ಕೋರ್ಸ್ ಪುಸ್ತಕವನ್ನು ರಚಿಸಿ</h3>
                 
                 <div className="space-y-4">
                   <div>
-                    <label className="block text-sm font-medium text-slate-300 mb-2">
-                      Course Topic
-                    </label>
+                    <label className="block text-sm font-medium text-slate-300 mb-2">                       ಕೋರ್ಸ್ ವಿಷಯ                     </label>
                     <input
                       type="text"
                       value={topic}
                       onChange={(e) => setTopic(e.target.value)}
-                      placeholder="e.g., Machine Learning, Web Development"
+                      placeholder="ಉದಾ., ಯಂತ್ರ ಕಲಿಕೆ, ವೆಬ್ ಅಭಿವೃದ್ಧಿ"
                       className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                     />
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-slate-300 mb-2">
-                      Difficulty Level
-                    </label>
+                    <label className="block text-sm font-medium text-slate-300 mb-2">                       ತೊಂದರೆ ಮಟ್ಟ                     </label>
                     <select
                       value={level}
                       onChange={(e) => setLevel(e.target.value)}
@@ -93,16 +81,12 @@ const LandingPage: React.FC = () => {
                         <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
                       ) : (
                         <>
-                          <Brain className="h-5 w-5" />
-                          Generate Course
-                        </>
+                          <Brain className="h-5 w-5" />                           ಕೋರ್ಸ್ ಅನ್ನು ರಚಿಸಿ                         </>
                       )}
                     </button>
                     
                     <button className="px-6 py-3 bg-slate-700/50 hover:bg-slate-600/50 text-slate-300 hover:text-white border border-slate-600 hover:border-slate-500 rounded-lg font-semibold transition-all duration-200 flex items-center gap-2">
-                      <FileText className="h-5 w-5" />
-                      Preview Sample
-                    </button>
+                      <FileText className="h-5 w-5" />                       ಪೂರ್ವವೀಕ್ಷಣೆ ಮಾದರಿ                     </button>
                   </div>
                 </div>
                 
@@ -110,7 +94,7 @@ const LandingPage: React.FC = () => {
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="h-4 w-4 fill-current" />
                   ))}
-                  <span className="text-sm text-slate-300 ml-2">4.9 from 2,000+ reviews</span>
+                  <span className="text-sm text-slate-300 ml-2">2,000+ ವಿಮರ್ಶೆಗಳಿಂದ 4.9</span>
                 </div>
               </div>
             </div>
@@ -119,7 +103,7 @@ const LandingPage: React.FC = () => {
               <div className="relative">
                 <img 
                   src="https://images.pexels.com/photos/256520/pexels-photo-256520.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                  alt="AI Learning" 
+                  alt="Ai ಲರ್ನಿಂಗ್" 
                   className="rounded-2xl shadow-2xl w-full h-96 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/50 to-transparent rounded-2xl"></div>
@@ -130,15 +114,11 @@ const LandingPage: React.FC = () => {
                     <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center">
                       <Brain className="h-4 w-4 text-white" />
                     </div>
-                    <span className="text-white font-semibold">AI Course Assistant</span>
+                    <span className="text-white font-semibold">ಎಐ ಸಹಾಯಕ ರೇಸ್</span>
                   </div>
-                  <p className="text-slate-300 text-sm mb-3">
-                    What should I look for in an employment contract?
-                  </p>
+                  <p className="text-slate-300 text-sm mb-3">                     ಉದ್ಯೋಗ ಒಪ್ಪಂದದಲ್ಲಿ ನಾನು ಏನು ನೋಡಬೇಕು?                   </p>
                   <div className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-lg p-3 border border-blue-500/30">
-                    <p className="text-blue-200 text-sm">
-                      I'll analyze key terms and create comprehensive course materials covering employment law, contract clauses, and negotiation strategies...
-                    </p>
+                    <p className="text-blue-200 text-sm">                       ನಾನು ಪ್ರಮುಖ ನಿಯಮಗಳನ್ನು ವಿಶ್ಲೇಷಿಸುತ್ತೇನೆ ಮತ್ತು ಉದ್ಯೋಗ ಕಾನೂನು, ಒಪ್ಪಂದದ ಷರತ್ತುಗಳು ಮತ್ತು ಸಮಾಲೋಚನಾ ತಂತ್ರಗಳನ್ನು ಒಳಗೊಂಡ ಸಮಗ್ರ ಕೋರ್ಸ್ ವಸ್ತುಗಳನ್ನು ರಚಿಸುತ್ತೇನೆ ...                     </p>
                   </div>
                 </div>
               </div>
@@ -151,13 +131,9 @@ const LandingPage: React.FC = () => {
       <section className="px-4 py-16 sm:px-6 lg:px-8 bg-slate-800/30">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-              Powerful Learning Tools at Your Fingertips
-            </h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              Choose from our comprehensive suite of AI-powered course generation solutions 
-              designed for everyone.
-            </p>
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">               ನಿಮ್ಮ ಬೆರಳ ತುದಿಯಲ್ಲಿ ಶಕ್ತಿಯುತ ಕಲಿಕೆಯ ಸಾಧನಗಳು             </h2>
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto">               AI- ಚಾಲಿತ ಕೋರ್ಸ್ ಪೀಳಿಗೆಯ ಪರಿಹಾರಗಳ ನಮ್ಮ ಸಮಗ್ರ ಸೂಟ್‌ನಿಂದ ಆರಿಸಿ 
+              ಎಲ್ಲರಿಗೂ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ.             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -165,31 +141,20 @@ const LandingPage: React.FC = () => {
               <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <Brain className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">AI Course Assistant</h3>
-              <p className="text-slate-300 mb-4">
-                Get instant answers to learning questions with our advanced AI 
-                chatbot trained on comprehensive educational databases and case studies.
-              </p>
+              <h3 className="text-xl font-bold text-white mb-3">ಎಐ ಸಹಾಯಕ ರೇಸ್</h3>
+              <p className="text-slate-300 mb-4">                 ನಮ್ಮ ಸುಧಾರಿತ AI ಯೊಂದಿಗೆ ಕಲಿಕೆಯ ಪ್ರಶ್ನೆಗಳಿಗೆ ತ್ವರಿತ ಉತ್ತರಗಳನ್ನು ಪಡೆಯಿರಿ 
+                ಚಾಟ್‌ಬಾಟ್ ಸಮಗ್ರ ಶೈಕ್ಷಣಿಕ ದತ್ತಸಂಚಯಗಳು ಮತ್ತು ಕೇಸ್ ಸ್ಟಡಿಗಳ ಬಗ್ಗೆ ತರಬೇತಿ ಪಡೆದಿದೆ.               </p>
               <div className="grid grid-cols-2 gap-4 text-sm text-slate-400">
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  24/7 Availability
-                </div>
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>                   24/7 ಲಭ್ಯತೆ                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  Instant responses
-                </div>
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>                   ತ್ವರಿತ ಪ್ರತಿಕ್ರಿಯೆಗಳು                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  Legal case reviewed
-                </div>
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>                   ಕಾನೂನು ಪ್ರಕರಣವನ್ನು ಪರಿಶೀಲಿಸಲಾಗಿದೆ                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  Easy to understand
-                </div>
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>                   ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು ಸುಲಭ                 </div>
               </div>
-              <button className="mt-6 text-blue-400 font-semibold flex items-center gap-2 hover:gap-3 transition-all">
-                Try it now <ArrowRight className="h-4 w-4" />
+              <button className="mt-6 text-blue-400 font-semibold flex items-center gap-2 hover:gap-3 transition-all">                 ಇದೀಗ ಪ್ರಯತ್ನಿಸಿ <ArrowRight className="h-4 w-4" />
               </button>
             </div>
 
@@ -197,31 +162,20 @@ const LandingPage: React.FC = () => {
               <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-green-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <FileText className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">PDF Course Books</h3>
-              <p className="text-slate-300 mb-4">
-                Upload and analyze documents for potential issues, missing 
-                clauses, compliance, and improvement recommendations.
-              </p>
+              <h3 className="text-xl font-bold text-white mb-3">ಪಿಡಿಎಫ್ ಕೋರ್ಸ್ ಪುಸ್ತಕಗಳು</h3>
+              <p className="text-slate-300 mb-4">                 ಸಂಭಾವ್ಯ ಸಮಸ್ಯೆಗಳಿಗಾಗಿ ದಾಖಲೆಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ ಮತ್ತು ವಿಶ್ಲೇಷಿಸಿ, ಕಾಣೆಯಾಗಿದೆ 
+                ಷರತ್ತುಗಳು, ಅನುಸರಣೆ ಮತ್ತು ಸುಧಾರಣಾ ಶಿಫಾರಸುಗಳು.               </p>
               <div className="grid grid-cols-2 gap-4 text-sm text-slate-400">
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  Risk assessment
-                </div>
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>                   ಅಪಾಯದ ಮೌಲ್ಯಮಾಪನ                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  Clause analysis
-                </div>
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>                   ಷರತ್ತು ವಿಶ್ಲೇಷಣೆ                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  Compliance checking
-                </div>
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>                   ಅನುಸರಣೆ ಪರಿಶೀಲನೆ                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  Improvement suggestions
-                </div>
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>                   ಸುಧಾರಣಾ ಸಲಹೆಗಳು                 </div>
               </div>
-              <button className="mt-6 text-cyan-400 font-semibold flex items-center gap-2 hover:gap-3 transition-all">
-                Try it now <ArrowRight className="h-4 w-4" />
+              <button className="mt-6 text-cyan-400 font-semibold flex items-center gap-2 hover:gap-3 transition-all">                 ಇದೀಗ ಪ್ರಯತ್ನಿಸಿ <ArrowRight className="h-4 w-4" />
               </button>
             </div>
 
@@ -229,32 +183,21 @@ const LandingPage: React.FC = () => {
               <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <Lightbulb className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Advanced Course Analysis</h3>
-              <p className="text-slate-300 mb-4">
-                Harness the power of AI to analyze course documents with precision 
-                and accuracy. Identifying potential issues and providing 
-                actionable recommendations.
-              </p>
+              <h3 className="text-xl font-bold text-white mb-3">ಸುಧಾರಿತ ಕೋರ್ಸ್ ವಿಶ್ಲೇಷಣೆ</h3>
+              <p className="text-slate-300 mb-4">                 ಕೋರ್ಸ್ ಡಾಕ್ಯುಮೆಂಟ್‌ಗಳನ್ನು ನಿಖರವಾಗಿ ವಿಶ್ಲೇಷಿಸಲು AI ಯ ಶಕ್ತಿಯನ್ನು ಬಳಸಿಕೊಳ್ಳಿ 
+                ಮತ್ತು ನಿಖರತೆ. ಸಂಭಾವ್ಯ ಸಮಸ್ಯೆಗಳನ್ನು ಗುರುತಿಸುವುದು ಮತ್ತು ಒದಗಿಸುವುದು 
+                ಕ್ರಿಯಾತ್ಮಕ ಶಿಫಾರಸುಗಳು.               </p>
               <div className="grid grid-cols-2 gap-4 text-sm text-slate-400">
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  Content Risk Assessment
-                </div>
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>                   ವಿಷಯ ಅಪಾಯದ ಮೌಲ್ಯಮಾಪನ                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  Course Research Assistant
-                </div>
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>                   ಕೋರ್ಸ್ ಸಂಶೋಧನಾ ಸಹಾಯಕ                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  Document Summarization
-                </div>
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>                   ಡಾಕ್ಯುಮೆಂಟ್ ಸಾರಾಂಶ                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  Improvement suggestions
-                </div>
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>                   ಸುಧಾರಣಾ ಸಲಹೆಗಳು                 </div>
               </div>
-              <button className="mt-6 text-purple-400 font-semibold flex items-center gap-2 hover:gap-3 transition-all">
-                Try it now <ArrowRight className="h-4 w-4" />
+              <button className="mt-6 text-purple-400 font-semibold flex items-center gap-2 hover:gap-3 transition-all">                 ಇದೀಗ ಪ್ರಯತ್ನಿಸಿ <ArrowRight className="h-4 w-4" />
               </button>
             </div>
           </div>
@@ -264,12 +207,8 @@ const LandingPage: React.FC = () => {
       {/* Trust Section */}
       <section className="px-4 py-16 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-            Trusted by Professionals Worldwide
-          </h2>
-          <p className="text-xl text-slate-300 mb-12 max-w-2xl mx-auto">
-            See what our users say about their experience with AI CourseBook
-          </p>
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">             ವಿಶ್ವಾದ್ಯಂತ ವೃತ್ತಿಪರರಿಂದ ವಿಶ್ವಾಸಾರ್ಹ           </h2>
+          <p className="text-xl text-slate-300 mb-12 max-w-2xl mx-auto">             AI ಕೋರ್ಸ್‌ಬುಕ್‌ನೊಂದಿಗಿನ ಅವರ ಅನುಭವದ ಬಗ್ಗೆ ನಮ್ಮ ಬಳಕೆದಾರರು ಏನು ಹೇಳುತ್ತಾರೆಂದು ನೋಡಿ           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -284,14 +223,14 @@ const LandingPage: React.FC = () => {
                 name: "Michael Chen",
                 role: "Data Scientist",
                 company: "Google",
-                content: "As a Recent convert, this platform saves me hours of legal contract reading. The AI provides accurate clause breakdowns complete within hours or day.",
+                ವಿಷಯ: "As a Recent convert, this platform saves me hours of legal contract reading. The AI provides accurate clause breakdowns complete within hours or day.",
                 rating: 5
               },
               {
                 name: "Emily Rodriguez",
                 role: "Startup Founder",
                 company: "TechStart Inc",
-                content: "Before signing any client contracts, I run it through CourseBook AI to spot red flags. My legal expenses have significantly decreased since I started."
+                ವಿಷಯ: "Before signing any client contracts, I run it through CourseBook AI to spot red flags. My legal expenses have significantly decreased since I started."
               }
             ].map((testimonial, index) => (
               <div key={index} className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/30">
@@ -320,20 +259,12 @@ const LandingPage: React.FC = () => {
       {/* CTA Section */}
       <section className="px-4 py-16 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-900/50 to-cyan-900/50">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-            Ready to Transform Your Learning Workflow?
-          </h2>
-          <p className="text-xl text-slate-300 mb-8">
-            Join thousands of professionals who trust CourseBook AI for their learning 
-            technology needs.
-          </p>
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">             ನಿಮ್ಮ ಕಲಿಕೆಯ ಕೆಲಸದ ಹರಿವನ್ನು ಪರಿವರ್ತಿಸಲು ಸಿದ್ಧರಿದ್ದೀರಾ?           </h2>
+          <p className="text-xl text-slate-300 mb-8">             ತಮ್ಮ ಕಲಿಕೆಗಾಗಿ ಕೋರ್ಸ್‌ಬುಕ್ AI ಅನ್ನು ನಂಬುವ ಸಾವಿರಾರು ವೃತ್ತಿಪರರೊಂದಿಗೆ ಸೇರಿ 
+            ತಂತ್ರಜ್ಞಾನದ ಅಗತ್ಯಗಳು.           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25">
-              Try Live CourseBook
-            </button>
-            <button className="bg-slate-700/50 hover:bg-slate-600/50 text-white px-8 py-4 rounded-lg font-semibold text-lg border border-slate-600 hover:border-slate-500 transition-all duration-200">
-              Check My Contract
-            </button>
+            <button className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25">               ಲೈವ್ ಕೋರ್ಸ್‌ಬುಕ್ ಪ್ರಯತ್ನಿಸಿ             </button>
+            <button className="bg-slate-700/50 hover:bg-slate-600/50 text-white px-8 py-4 rounded-lg font-semibold text-lg border border-slate-600 hover:border-slate-500 transition-all duration-200">               ನನ್ನ ಒಪ್ಪಂದವನ್ನು ಪರಿಶೀಲಿಸಿ             </button>
           </div>
         </div>
       </section>
